@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Info</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <h2>Short URL</h2>
+        <button class="container" title="Click to Copy">
+          localhost:3000/open/<%= shortId %>
+        </button>
+      </div>
+      <div class="box">
+        <h2>Analytics URL</h2>
+        <button class="container" title="Click to Copy">
+          localhost:3000/analytics/<%= shortId %>
+        </button>
+      </div>
+    </div>
+
+    <script>
+        const containers = document.querySelectorAll(".container");
+        
+        containers.forEach(container => {
+            container.addEventListener("click", () => {
+                navigator.clipboard.writeText(container.textContent);
+            });
+        })
+    </script>
+  </body>
+</html>

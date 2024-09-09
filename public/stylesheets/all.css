@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+table {
+  width: 100%;
+}
+
+table tr:first-child {
+  background-color: #222;
+}
+
+th {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px;
+}
+
+td {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
